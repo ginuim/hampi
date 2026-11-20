@@ -1,22 +1,34 @@
-# HAM派客户端
+# HAM 派
 
-HAM派是一个面向业余无线电爱好者的 UniApp 客户端，包含考试练习、摩尔斯电码学习、通联日志等功能。本仓库只包含客户端，后端和部署工具不在此发布。
+HAM 派是面向业余无线电爱好者的学习与工具客户端。你可以用它练习 A、B、C 类业余无线电操作技术能力验证考试题目、练习摩尔斯电码（CW）、记录通联（QSO），也可以查阅呼号规则、Q 简语和常用缩语。
 
-## 本地运行
+**[访问 HAM 派官网](https://hampi.reaidea.com/)**
 
-需要 Node.js 和 pnpm。
+## 和我们一起完善 HAM 派
+
+欢迎所有 HAM 参与。即使不写代码，一条带题号和依据的错题反馈也能帮助下一位备考的朋友。
+
+- **校对题库和解析**：发现题干、选项、答案、配图或解析有误，可以在 [Issues](https://github.com/ginuim/hampi/issues/new) 提交反馈。请注明题号、问题、建议修改和可核对的来源。法规题请尽量附上文件名称、条款和版本。
+- **改进日常工具**：欢迎反馈 CW、通联日志、知识查询等功能的使用问题。报告故障时，附上设备或平台、复现步骤，以及预期和实际结果。
+- **提交修改**：可以 fork 本仓库，完成修改后提交 Pull Request，说明改了什么、为什么改、如何验证。当前题库在 [`src/subpkg/exam/data/`](src/subpkg/exam/data/)，题目和解析分别在 `questions.json` 和 `explanations.json`。涉及答案修订时，请同时检查对应解析。
+
+## 本地开发
+
+客户端使用 UniApp、Vue 3 和 pnpm。安装依赖后，按目标平台启动开发构建：
 
 ```sh
 pnpm install --frozen-lockfile
 pnpm run dev:h5
-# 微信小程序
+# 或启动微信小程序开发构建
 pnpm run dev:mp-weixin
 ```
 
-小程序构建产物在 `dist/dev/mp-weixin`；使用微信开发者工具打开，并在 `src/manifest.json` 中配置自己的 AppID。生产构建可使用 `pnpm run build:h5` 或 `pnpm run build:mp-weixin`。
+开发构建输出在 `dist/dev/mp-weixin`。在 `src/manifest.json` 配置自己的微信小程序 AppID，再用微信开发者工具打开构建目录。生产构建使用 `pnpm run build:h5` 或 `pnpm run build:mp-weixin`。
 
-## 服务配置与限制
+## 仓库范围
 
-默认不连接原项目的后端 API。`src/utils/request.js` 中的 `https://api.example.invalid` 是占位地址，登录和数据同步等功能需要自行实现兼容的后端并修改地址。文章、关于作者、Banner、题目图片、远程解析及分享图片使用原项目的公开资源地址，可按需替换为自己的资源。缺少服务时，相关功能不能正常使用。
+本仓库提供客户端源码。登录和云同步需要自行配置兼容的后端，API 地址在 `src/utils/request.js` 中。文章、题目图片、在线解析和分享图片默认使用 HAM 派现有的公开资源地址。
 
-仓库包含题库、图片、音频和第三方组件，发布及再分发前请核实其权利和授权。尚未指定项目许可证。
+项目尚未指定许可证。再分发题库、图片、音频或第三方组件前，请核实对应素材的授权。
+
+73！
