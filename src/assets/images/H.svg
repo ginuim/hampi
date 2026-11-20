@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19" height="35" viewBox="0 0 19 35">
+	<pat id="word" transform="matrix(1 0 0 1 0 0)" d="M2.0625 28L6.35742 28L6.35742 20.6582L12.2402 20.6582L12.2402 28L16.5117 28L16.5117 10.1172L12.2402 10.1172L12.2402 16.9375L6.35742 16.9375L6.35742 10.1172L2.0625 10.1172L2.0625 28Z" fill-rule="nonzero" fill="rgb(0, 0, 0)"/>
+	<path id="1" transform="matrix(1 0 0 1 3 11)" d="M1 0C1.55228 0 2 0.447715 2 1C2 1.55228 1.55228 2 1 2C0.447715 2 0 1.55228 0 1C0 0.447715 0.447715 0 1 0Z" fill-rule="nonzero" fill="rgb(0, 186, 255)"/>
+	<path id="2" transform="matrix(1 0 0 1 13 11)" d="M1 0C1.55228 0 2 0.447715 2 1C2 1.55228 1.55228 2 1 2C0.447715 2 0 1.55228 0 1C0 0.447715 0.447715 0 1 0Z" fill-rule="nonzero" fill="rgb(0, 186, 255)"/>
+	<path id="3" transform="matrix(1 0 0 1 3 25)" d="M1 0C1.55228 0 2 0.447715 2 1C2 1.55228 1.55228 2 1 2C0.447715 2 0 1.55228 0 1C0 0.447715 0.447715 0 1 0Z" fill-rule="nonzero" fill="rgb(0, 186, 255)"/>
+	<path id="4" transform="matrix(1 0 0 1 13 25)" d="M1 0C1.55228 0 2 0.447715 2 1C2 1.55228 1.55228 2 1 2C0.447715 2 0 1.55228 0 1C0 0.447715 0.447715 0 1 0Z" fill-rule="nonzero" fill="rgb(0, 186, 255)"/>
+</svg>

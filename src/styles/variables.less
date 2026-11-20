@@ -1,0 +1,74 @@
+// 基础颜色
+@primary-color: #007AFF;
+@success-color: #00B42B;
+@warning-color: #FF9500;
+@error-color: #F53F3F;
+
+// 定义混入(mixin)而不是变量
+.light-theme() {
+  // 背景色
+  --background-primary: #f5f5f5;
+  --background-container: #ffffff;
+  
+  // 文字颜色
+  --text-primary: #333333;
+  --text-secondary: #666666;
+  --text-tertiary: #999999;
+  
+  // 边框颜色
+  --border-color: #e2e2e2;
+  --border-color-light: #f5f5f5;
+  --border-color-card: #e2e2e2;
+
+  --search-background: #ffffff;
+  --map-background: #ffffff;
+  --avatar-background: #eee;
+  
+  // 功能色
+  --primary-color: @primary-color;
+  --success-color: @success-color;
+  --warning-color: @warning-color;
+  --error-color: @error-color;
+
+  // 考试相关颜色
+  --correct-color: @success-color;
+  --wrong-color: @error-color;
+  --button-background: #f0f0f0;
+  --button-text: #333333;
+  --button-active: #e0e0e0;
+  --card-shadow: rgba(0, 0, 0, 0.1);
+}
+
+// 暗色主题
+.dark-theme() {
+  // 背景色
+  --background-primary: #03040B;
+  --background-container: #19213A;
+  
+  // 文字颜色
+  --text-primary: #ffffff;
+  --text-secondary: #787C90;
+  --text-tertiary: #666666;
+  
+  // 边框颜色
+  --border-color: #363d5c;
+  --border-color-light: #21253A;
+  --border-color-card: #21253A;
+  --search-background: #19213A;
+  --map-background: #0f1437;
+  --avatar-background: #03040B;
+  
+  // 功能色保持不变
+  --primary-color: @primary-color;
+  --success-color: @success-color;
+  --warning-color: @warning-color;
+  --error-color: @error-color;
+
+  // 考试相关颜色
+  --correct-color: @success-color;
+  --wrong-color: @error-color;
+  --button-background: #333333;
+  --button-text: #ffffff;
+  --button-active: #444444;
+  --card-shadow: rgba(0, 0, 0, 0.3);
+} 

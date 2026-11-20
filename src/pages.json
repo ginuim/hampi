@@ -1,0 +1,271 @@
+{
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "HAM派",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/articles/index",
+			"style": {
+				"navigationBarTitleText": "知识",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/profile/index",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/search/detail",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/knowledge/index",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/article/index",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/tools/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/callsign/index",
+			"style": {
+				"navigationBarTitleText": "呼号查询",
+				"navigationStyle": "custom"
+			}
+		}
+	],
+	"subPackages": [
+		{
+			"root": "subpkg/exam",
+			"independent": false,
+			"pages": [
+				{
+					"path": "index",
+					"style": {
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "practice/index",
+					"style": {
+						"navigationBarTitleText": "练习模式",
+						"disableSwipeBack": true
+					}
+				},
+				{
+					"path": "exam/index",
+					"style": {
+						"navigationBarTitleText": "模拟考试",
+						"disableSwipeBack": true
+					}
+				},
+				{
+					"path": "errSet/index",
+					"style": {
+						"navigationBarTitleText": "错题集",
+						"disableSwipeBack": true
+					}
+				},
+				{
+					"path": "favorites/index",
+					"style": {
+						"navigationBarTitleText": "我的收藏",
+						"disableSwipeBack": true
+					}
+				},
+				{
+					"path": "history/index",
+					"style": {
+						"navigationBarTitleText": "考试记录",
+						"disableSwipeBack": true
+					}
+				}
+			]
+		},
+		{
+			"root": "subpkg/exam.old",
+			"independent": false,
+			"pages": [
+				{
+					"path": "index",
+					"style": {
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "practice/index",
+					"style": {
+						"navigationBarTitleText": "练习模式"
+					}
+				},
+				{
+					"path": "exam/index",
+					"style": {
+						"navigationBarTitleText": "模拟考试"
+					}
+				},
+				{
+					"path": "favorites/index",
+					"style": {
+						"navigationBarTitleText": "我的收藏"
+					}
+				},
+				{
+					"path": "history/index",
+					"style": {
+						"navigationBarTitleText": "考试记录"
+					}
+				}
+			]
+		},
+		{
+			"root": "subpkg/webview",
+			"independent": false,
+			"pages": [
+				{
+					"path": "index",
+					"style": {
+						"navigationStyle": "custom"
+					}
+				}
+			]
+		},
+		{
+			"root": "subpkg/qso",
+			"independent": false,
+			"pages": [
+				{
+					"path": "index",
+					"style": {
+						"navigationBarTitleText": "通联日志"
+					}
+				}
+			]
+		},
+		{
+			"root": "subpkg/cw",
+			"independent": false,
+			"pages": [
+				{
+					"path": "index",
+					"style": {
+						"navigationBarTitleText": "CW练习"
+					}
+				}
+			]
+		},
+		{
+			"root": "subpkg/profile",
+			"independent": false,
+			"pages": [
+				{
+					"path": "edit",
+					"style": {
+						"navigationBarTitleText": ""
+					}
+				},
+				{
+					"path": "level",
+					"style": {
+						"navigationStyle": "custom"
+					}
+				}
+			]
+		},
+		{
+			"root": "subpkg/settings",
+			"independent": false,
+			"pages": [
+				{
+					"path": "updatelog",
+					"style": {
+						"navigationBarTitleText": "更新日志"
+					}
+				},
+				{
+					"path": "backup",
+					"style": {
+						"navigationBarTitleText": "数据备份"
+					}
+				}
+			]
+		}
+		// {
+		// 	"root": "subpkg/tools",
+		// 	"independent": false,
+		// 	"pages": [
+		// 		{
+		// 			"path": "location",
+		// 			"style": {
+		// 				"navigationBarTitleText": "位置查询"
+		// 			}
+		// 		}
+		// 	]
+		// }
+	],
+	"globalStyle": {
+		"navigationStyle": "custom",
+		"backgroundColor": "@bgColor"
+	},
+	"tabBar": {
+		"color": "@navTxtStyle",
+		"backgroundColor": "@navBgColor",
+		"borderStyle": "black",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "static/tabbar/radio-tower.png",
+				"selectedIconPath": "static/tabbar/radio-tower.png"
+			},
+			// {
+			// 	"pagePath": "pages/articles/index",
+			// 	"text": "知识",
+			// 	"iconPath": "static/tabbar/bookshelf.png",
+			// 	"selectedIconPath": "static/tabbar/bookshelf.png"
+			// },
+			{
+				"pagePath": "pages/profile/index",
+				"text": "我的",
+				"iconPath": "static/tabbar/user.png",
+				"selectedIconPath": "static/tabbar/user.png"
+			}
+		]
+	},
+	"style": {
+		"lang": "less"
+	},
+	"preloadRule": {
+		"pages/index/index": {
+			"network": "all",
+			"packages": [
+				"subpkg/exam"
+			]
+		},
+		"pages/profile/index": {
+			"network": "all",
+			"packages": [
+				"subpkg/profile"
+			]
+		}
+	}
+}

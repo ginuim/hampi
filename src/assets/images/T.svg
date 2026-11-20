@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="35" viewBox="0 0 16 35">
+	<path id="word" transform="matrix(1 0 0 1 0 0)" d="M5.51953 28L9.81445 28L9.81445 13.6973L14.666 13.6973L14.666 10.1172L0.697266 10.1172L0.697266 13.6973L5.51953 13.6973L5.51953 28Z" fill-rule="nonzero" fill="rgb(0, 0, 0)"/>
+	<path id="1" transform="matrix(1 0 0 1 5 12)" d="M-1 0C-1 0.55228 -0.55228 1 0 1L6 1C6.55228 1 7 0.55228 7 0C7 -0.55228 6.55228 -1 6 -1L0 -1C-0.55228 -1 -1 -0.55228 -1 0Z" fill-rule="evenodd" fill="rgb(0, 186, 255)"/>
+</svg>

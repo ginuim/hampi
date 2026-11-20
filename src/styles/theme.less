@@ -1,0 +1,18 @@
+@import './variables.less';
+
+// 应用亮色主题变量
+:root {
+  .light-theme();
+}
+
+// 系统暗色模式
+@media (prefers-color-scheme: dark) {
+  :root {
+    .dark-theme();
+  }
+}
+
+// 手动切换暗色模式
+.dark {
+  .dark-theme();
+}

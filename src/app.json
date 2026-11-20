@@ -1,0 +1,6 @@
+{
+  "requiredPrivateInfos": [
+    "getLocation",
+    "onLocationChange"
+  ]
+} 

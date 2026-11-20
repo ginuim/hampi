@@ -1,0 +1,11 @@
+node_modules/
+dist/
+unpackage/
+*.log
+.DS_Store
+.env
+.env.*
+!.env.example
+*.local
+project.private.config.json
+.repo_memory/
